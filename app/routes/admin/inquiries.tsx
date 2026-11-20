@@ -1,0 +1,1 @@
+import { AdminSectionPlaceholder } from "@/components/admin/AdminSectionPlaceholder"; export default function Page(){return <AdminSectionPlaceholder title="Inquiries & Tour Requests" description="Review general website contact requests. This area should not be used for clinical or protected health information." action="Export Requests"/>;}

@@ -1,0 +1,1 @@
+import { AdminSectionPlaceholder } from "@/components/admin/AdminSectionPlaceholder"; export default function Page(){return <AdminSectionPlaceholder title="Gallery" description="Create albums, upload images, write captions, and control gallery ordering." action="Upload Photos"/>;}

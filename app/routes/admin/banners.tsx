@@ -1,0 +1,1 @@
+import { AdminSectionPlaceholder } from "@/components/admin/AdminSectionPlaceholder"; export default function Page(){return <AdminSectionPlaceholder title="Banner Manager" description="Create featured site-wide messages with optional start/end dates and links." action="New Banner"/>;}

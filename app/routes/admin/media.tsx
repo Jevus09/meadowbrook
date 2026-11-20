@@ -1,0 +1,1 @@
+import { AdminSectionPlaceholder } from "@/components/admin/AdminSectionPlaceholder"; export default function Page(){return <AdminSectionPlaceholder title="Media Library" description="Central library for images and files uploaded to Supabase Storage." action="Upload Media"/>;}

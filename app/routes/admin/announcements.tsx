@@ -1,0 +1,1 @@
+import { AdminSectionPlaceholder } from "@/components/admin/AdminSectionPlaceholder"; export default function Page(){return <AdminSectionPlaceholder title="Announcements" description="Manage short site updates and important news items displayed to visitors." action="Add Announcement"/>;}

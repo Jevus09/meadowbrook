@@ -1,0 +1,1 @@
+import { AdminSectionPlaceholder } from "@/components/admin/AdminSectionPlaceholder"; export default function Page(){return <AdminSectionPlaceholder title="Posts" description="Create, edit, schedule, publish, and archive news and blog content." action="New Post"/>;}

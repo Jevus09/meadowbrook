@@ -1,0 +1,1 @@
+import { AdminSectionPlaceholder } from "@/components/admin/AdminSectionPlaceholder"; export default function Page(){return <AdminSectionPlaceholder title="Settings" description="Site identity, contact details, social links, administrator roles, and CMS preferences." action="Save Settings"/>;}
