@@ -14,14 +14,12 @@ import {
 
 import { Button } from '@/components/common/Button'
 import { Container } from '@/components/common/Container'
-import bolingbrookImg from '../../src/images/contactPage/Bolingbrook_front.png'
-import NapervilleImg from '../../src/images/contactPage/Naperville_front.png'
-import laGrangeImg from '../../src/images/contactPage/Lagrange_front.png'
 //import  naperville  from '@/features/locations/data/naperville'
 import hero from  '../../src/images/about/hero.png'
 import story from  '../../src/images/about/story.jpg'
 import personCentered from '../../src/images/about/person-centered.jpg'
 import banner from '../../src/images/about/BANNER.jpg'
+import { LocationCards } from '@/components/cards/LocationCard'
 
 
 
@@ -79,26 +77,6 @@ const amenities = [
   },
 ]
 
-const locations = [
-  {
-    name: 'Meadowbrook Naperville',
-    city: 'Naperville, Illinois',
-    image: NapervilleImg,
-    to: '/locations/naperville',
-  },
-  {
-    name: 'Meadowbrook LaGrange',
-    city: 'LaGrange, Illinois',
-    image: laGrangeImg,
-    to: '/locations/lagrange',
-  },
-  {
-    name: 'Meadowbrook Bolingbrook',
-    city: 'Bolingbrook, Illinois',
-    image: bolingbrookImg,
-    to: '/locations/bolingbrook',
-  },
-]
 
 export default function About() {
   return (
@@ -186,7 +164,7 @@ export default function About() {
                 <img
                   src={story}
                   alt='Care at Meadowbrook Rehabilitation'
-                  className='aspect-4/5 w-full object-cover'
+                  className='aspect-4/5 w-full object-cover rounded-3xl'
                 />
               </div>
 
@@ -262,7 +240,7 @@ export default function About() {
                 <img
                   src={personCentered}
                   alt='Caregiver spending time with a Meadowbrook resident'
-                  className='aspect-4/5 w-full object-cover'
+                  className='aspect-4/5 w-full object-cover rounded-3xl'
                 />
               </div>
             </div>
@@ -394,7 +372,7 @@ export default function About() {
               </div>
             </div>
 
-            <div className='rounded-2rem bg-white p-8 shadow-sm sm:p-10'>
+            <div className='rounded-2rem bg-white p-8 shadow-sm sm:p-10 rounded-3xl'>
               <p className='font-serif text-6xl font-semibold text-meadow-900'>
                 20+
               </p>
@@ -495,13 +473,13 @@ export default function About() {
               relationships, and a welcoming environment all matter.
             </p>
 
-            <Link
+            {/* <Link
               to='/life-at-meadowbrook'
               className='mt-6 inline-flex items-center gap-2 font-semibold text-meadow-800 transition hover:text-meadow-600'
             >
               Life at Meadowbrook
               <FiArrowRight />
-            </Link>
+            </Link> */}
           </div>
         </Container>
       </section>
@@ -525,40 +503,7 @@ export default function About() {
               </p>
             </div>
           </div>
-
-          <div className='mt-12 grid gap-6 lg:grid-cols-3'>
-            {locations.map((location) => (
-              <Link
-                key={location.name}
-                to={location.to}
-                className='group relative min-h-105 overflow-hidden rounded-3xl bg-meadow-950'
-              >
-                <img
-                  src={location.image}
-                  alt={location.name}
-                  className='absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-105'
-                />
-
-                <div className='absolute inset-0 bg-linear-to-t from-meadow-950 via-meadow-950/30 to-transparent' />
-
-                <div className='absolute inset-x-0 bottom-0 p-7 text-white sm:p-8'>
-                  <div className='flex items-center gap-2 text-sm text-white/70'>
-                    <FiMapPin />
-                    {location.city}
-                  </div>
-
-                  <h3 className='mt-2 font-serif text-2xl font-semibold'>
-                    {location.name}
-                  </h3>
-
-                  <div className='mt-5 inline-flex items-center gap-2 text-sm font-semibold'>
-                    Explore Location
-                    <FiArrowRight className='transition group-hover:translate-x-1' />
-                  </div>
-                </div>
-              </Link>
-            ))}
-          </div>
+          <LocationCards/>
         </Container>
       </section>
 

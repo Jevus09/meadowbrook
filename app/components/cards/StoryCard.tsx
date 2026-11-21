@@ -86,9 +86,7 @@ interface StoryCardProps {
   story: SuccessStory
 }
 
-export default function StoryCard({
-  story,
-}: StoryCardProps) {
+export default function StoryCard({ story,}: StoryCardProps) {
   return (
     <article className='group overflow-hidden rounded-3xl border border-slate-200 bg-white transition duration-300 hover:-translate-y-1 hover:shadow-xl'>
       <Link

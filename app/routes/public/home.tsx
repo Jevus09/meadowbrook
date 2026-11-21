@@ -8,6 +8,10 @@ import { locations } from '@/data/mock/locations'
 import { newsPosts } from '@/data/mock/news'
 import { services } from '@/data/mock/services'
 import hero from 'app/src/images/landingPage/homeHero.webp'
+import { LocationCards } from '@/components/cards/LocationCard'
+import { HomeWelcome } from '@/components/layout/HomeWelcome'
+
+
 
 export function meta() {
   return [
@@ -23,8 +27,8 @@ export function meta() {
 export default function HomePage() {
   return (
     <>
-      <section className='relative overflow-hidden bg-ivory py-20 sm:py-28'>
-        <Container className='grid items-center gap-12 lg:grid-cols-[1.05fr_.95fr]'>
+      <section className='relative overflow-hidden bg-ivory py-20! sm:py-28'>
+        <Container className='grid items-center gap-12 md:gap-0 lg:grid-cols-[1.05fr_.95fr]'>
           <div>
             <p className='mb-4 text-xs font-bold uppercase tracking-[0.24em] text-gold-600'>
               Rehabilitation · Skilled Nursing · Long-Term Care
@@ -50,10 +54,13 @@ export default function HomePage() {
               Bolingbrook
             </div>
           </div>
-          <div className='soft-card overflow-hidden rounded-2rem bg-linear-to-br from-sage-100 via-white to-ivory'>
-              <img src={hero} />
+          <div className='overflow-hidden rounded-2rem border-none! '>
+              <img src={hero} className='rounded-3xl  ' />
           </div>
         </Container>
+      </section>
+      <section>
+        <HomeWelcome/>
       </section>
 
       <section className='py-20'>
@@ -79,7 +86,7 @@ export default function HomePage() {
             title='Care close to home'
             description='Location content is currently mocked and can later be managed through the admin dashboard.'
           />
-          <div className='mt-10 grid gap-5 md:grid-cols-3'>
+          {/* <div className='mt-10 grid gap-5 md:grid-cols-3'>
             {locations.map((location) => (
               <div
                 key={location.slug}
@@ -100,7 +107,8 @@ export default function HomePage() {
                 </Button>
               </div>
             ))}
-          </div>
+          </div> */}
+          <LocationCards />
         </Container>
       </section>
 
