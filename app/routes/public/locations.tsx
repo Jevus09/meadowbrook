@@ -10,6 +10,7 @@ export default function location() {
       <section className='bg-sage-50 py-20'>
         <Container>
           <SectionHeading
+          centered
             eyebrow='Our Locations'
             title='Care close to home'
             description='Location content is currently mocked and can later be managed through the admin dashboard.'

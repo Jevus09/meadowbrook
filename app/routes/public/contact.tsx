@@ -45,6 +45,7 @@ export default function ContactPage() {
     },
   ]
 
+  
   return (
     <>
       <PageHero
@@ -54,12 +55,12 @@ export default function ContactPage() {
       />
       <div>
         <iframe
-          className='w-full h-[50vh]'
+          className='w-full h-[70vh] md:pt-1'
           loading='lazy'
           allowFullScreen
-          src='' //{`https://www.google.com/maps/embed/v1/search?q=${activeLocation}&key=${mapsApiKey}`}
+          src={`https://www.google.com/maps/embed/v1/search?q=${activeLocation}&key=${mapsApiKey}`}
         ></iframe>
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full px-2   bg-ivory'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full px-2 md:px-12   bg-ivory'>
           {contactLocations.map((card, index) => (
             <div
               className={`

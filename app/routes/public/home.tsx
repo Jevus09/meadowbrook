@@ -43,13 +43,13 @@ export default function HomePage() {
               comprehensive support for recovery, comfort, and overall
               well-being.
             </p>
-            <div className='mt-8 flex flex-wrap gap-3'>
+            <div className='mt-8 flex justify-center flex-wrap gap-3'>
               <Button to='/services' variant='primary'>Explore Our Services</Button>
               <Button to='/contact' variant='secondary' className='gap-2'>
                 <FiCalendar /> Schedule a Visit
               </Button>
             </div>
-            <div className='mt-8 flex flex-wrap gap-4 text-sm text-neutral-600'>
+            <div className='mt-8 flex flex-wrap gap-4 justify-center text-sm text-neutral-600'>
               <FiMapPin className='text-gold-600' /> Naperville · LaGrange ·
               Bolingbrook
             </div>
@@ -81,7 +81,7 @@ export default function HomePage() {
 
       <section className='bg-sage-50 py-20'>
         <Container>
-          <SectionHeading
+          <SectionHeading centered
             eyebrow='Our Locations'
             title='Care close to home'
             description='Location content is currently mocked and can later be managed through the admin dashboard.'
@@ -114,7 +114,7 @@ export default function HomePage() {
 
       <section className='py-20'>
         <Container>
-          <SectionHeading
+          <SectionHeading centered
             eyebrow='News & Announcements'
             title="What's Happening at Meadowbrook"
           />
@@ -126,20 +126,20 @@ export default function HomePage() {
         </Container>
       </section>
 
-      <section className='bg-meadow-900 py-16 text-white'>
-        <Container className='flex flex-col items-start justify-between gap-6 md:flex-row md:items-center'>
+      <section className='bg-ivory py-16 text-black'>
+        <Container className='flex flex-col items-center md:justify-between gap-6 md:flex-row '>
           <div>
             <p className='font-serif text-4xl font-semibold'>
               See Meadowbrook for Yourself
             </p>
-            <p className='mt-3 max-w-2xl text-sm leading-6 text-white/70'>
+            <p className='mt-3 max-w-2xl text-sm leading-6 '>
               Tour a community, meet the team, and get answers to your
               questions.
             </p>
           </div>
           <Button
             to='/contact'
-            variant='secondary'            
+            variant='primary'            
           >
             Schedule a Tour
           </Button>

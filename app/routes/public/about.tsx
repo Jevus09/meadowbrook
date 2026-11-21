@@ -20,6 +20,7 @@ import story from  '../../src/images/about/story.jpg'
 import personCentered from '../../src/images/about/person-centered.jpg'
 import banner from '../../src/images/about/BANNER.jpg'
 import { LocationCards } from '@/components/cards/LocationCard'
+import { PageHero } from '@/components/common/PageHero'
 
 
 
@@ -82,7 +83,7 @@ export default function About() {
   return (
     <>
       {/* Hero */}
-      <section className='relative isolate min-h-620px overflow-hidden bg-meadow-950'>
+      {/* <section className='relative isolate min-h-620px overflow-hidden bg-meadow-950'>
         <img
           src= {hero}
           alt='Meadowbrook Rehabilitation'
@@ -107,7 +108,7 @@ export default function About() {
               Chicagoland.
             </p>
 
-            <div className='mt-9 flex flex-wrap gap-4'>
+            <div className='mt-9 flex justify-center flex-wrap gap-4'>
               <Button variant='secondary' to='/contact'>Schedule a Tour</Button>
 
               <Link
@@ -120,13 +121,19 @@ export default function About() {
             </div>
           </div>
         </Container>
-      </section>
-
+      </section> */}
+      <PageHero
+        eyebrow='About Meadowbrook'
+        title='Care centered around people.'
+        description='For more than 25 years, Meadowbrook has provided rehabilitation
+        and personalized care to individuals and families throughout
+        Chicagoland.'
+      />
       {/* Our Story */}
       <section className='bg-white py-20 lg:py-28'>
         <Container>
           <div className='grid items-center gap-14 lg:grid-cols-2 lg:gap-20'>
-            <div>
+            <div className='flex flex-col items-center' >
               <p className='text-sm font-semibold uppercase tracking-[0.2em] text-meadow-700'>
                 Our Story
               </p>
@@ -164,11 +171,11 @@ export default function About() {
                 <img
                   src={story}
                   alt='Care at Meadowbrook Rehabilitation'
-                  className='aspect-4/5 w-full object-cover rounded-3xl'
+                  className='aspect-4/5 object-cover rounded-3xl'
                 />
               </div>
 
-              <div className='absolute -bottom-8 -left-4 rounded-2xl bg-meadow-950 px-7 py-6 text-white shadow-xl sm:-left-8'>
+              <div className='absolute -bottom-8 left-16 rounded-2xl bg-meadow-950 px-7 py-6 text-white shadow-xl md:-left-8'>
                 <p className='font-serif text-4xl font-semibold'>25+</p>
                 <p className='mt-1 text-sm text-white/70'>
                   Years serving Chicagoland
@@ -455,11 +462,11 @@ export default function About() {
           className='absolute inset-0 h-full w-full object-cover'
         />
 
-        <div className='absolute inset-0 bg-meadow-950/45' />
+        <div className='flex justify-center items-center bg-meadow-950/45' />
 
-        <Container className='relative flex min-h-120 items-end py-16'>
-          <div className='max-w-xl rounded-3xl bg-white/95 p-8 backdrop-blur sm:p-10'>
-            <p className='text-sm font-semibold uppercase tracking-[0.2em] text-meadow-700'>
+        <Container className='relative flex min-h-120 items-center justify-center py-16'>
+          <div className='max-w-xl rounded-3xl bg-white/35 p-8 backdrop-blur sm:p-10'>
+            <p className='text-sm font-semibold uppercase tracking-[0.2em] text-black'>
               A Sense of Home
             </p>
 
@@ -467,7 +474,7 @@ export default function About() {
               Care should support the whole person.
             </h2>
 
-            <p className='mt-4 leading-7 text-slate-600'>
+            <p className='mt-4 leading-7 text-slate-900'>
               Recovery and long-term well-being are influenced by more than
               clinical treatment. Comfort, familiar routines, meaningful
               relationships, and a welcoming environment all matter.
@@ -486,8 +493,8 @@ export default function About() {
 
       {/* Locations */}
       <section className='bg-stone-50 py-20 lg:py-28'>
-        <Container>
-          <div className='flex flex-col justify-between gap-6 md:flex-row md:items-end'>
+        <Container >
+          <div className='flex flex-col justify-center gap-6 md:flex-row md:items-end'>
             <div className='max-w-2xl'>
               <p className='text-sm font-semibold uppercase tracking-[0.2em] text-meadow-700'>
                 Our Communities
