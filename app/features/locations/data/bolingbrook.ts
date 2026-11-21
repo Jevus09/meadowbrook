@@ -1,4 +1,5 @@
 import type { LocationData } from '../types'
+import bollingbrookImg from '@/src/images/contactPage/Bolingbrook_front.png'
 
 export const bolingbrook: LocationData = {
   slug: 'bolingbrook',
@@ -43,7 +44,7 @@ export const bolingbrook: LocationData = {
     ],
 
     image:
-      '/images/locations/bolingbrook/exterior.jpg',
+    bollingbrookImg,
 
     imageAlt:
       'Exterior of Meadowbrook Bolingbrook',

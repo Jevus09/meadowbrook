@@ -1,5 +1,9 @@
 import type { LocationData } from '../types'
-import napervilleVid from '../../../src/videos/MB_Naperville-1080.mp4'
+//import napervilleVid from '../../../src/videos/MB_Naperville-1080.mp4'
+
+import napervilleimg from '@/src/images/contactPage/Naperville_front.png'
+
+
 
 export const naperville: LocationData = {
   slug: 'naperville',
@@ -43,7 +47,7 @@ export const naperville: LocationData = {
     ],
 
     image:
-      '/images/locations/naperville/exterior.jpg',
+    napervilleimg,
 
     imageAlt:
       'Exterior of Meadowbrook Naperville',
@@ -126,9 +130,9 @@ export const naperville: LocationData = {
     description:
       'Explore our rehabilitation spaces, accommodations, and community.',
 
-    src: napervilleVid,
+    src: "",
 
     poster:
-      '/images/locations/naperville/video-poster.jpg',
+    napervilleimg,
   },
 }

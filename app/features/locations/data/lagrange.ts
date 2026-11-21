@@ -1,4 +1,5 @@
 import type { LocationData } from '../types'
+import laGrangeImg from '@/src/images/contactPage/Lagrange_front.png'
 
 export const lagrange: LocationData = {
   slug: 'lagrange',
@@ -43,7 +44,7 @@ export const lagrange: LocationData = {
     ],
 
     image:
-      '/images/locations/lagrange/exterior.jpg',
+    laGrangeImg,
 
     imageAlt:
       'Exterior of Meadowbrook LaGrange',

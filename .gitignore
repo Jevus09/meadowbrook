@@ -6,3 +6,4 @@ build/
 .env.*.local
 .DS_Store
 .netlify/
+app/src/videos/*.mp4
