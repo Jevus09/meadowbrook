@@ -45,7 +45,9 @@ export default function ContactPage() {
     },
   ]
 
-  
+  const mapsApiKey = import.meta.env.VITE_MAPS_API_KEY
+  console.log(import.meta.env.VITE_MAPS_API_KEY)
+  console.log(mapsApiKey)
   return (
     <>
       <PageHero
