@@ -44,13 +44,13 @@ export function HomeWelcome() {
                         {/* Philosophy */}
                         <div className='mt-10 rounded-3xl border border-ivory bg-ivory p-7 shadow-sm sm:p-8'>
                             <div className='flex items-start gap-4'>
-                                <div className='flex size-11 shrink-0 items-center justify-center rounded-2xl bg-meadow-100 text-meadow-800'>
+                                {/* <div className='flex size-11 shrink-0 items-center justify-center rounded-2xl bg-meadow-100 text-meadow-800'>
                                     <FiCheckCircle className='size-5' />
-                                </div>
+                                </div> */}
 
                                 <div>
-                                    <p className='text-sm font-semibold uppercase tracking-[0.16em] text-meadow-700'>
-                                        Our Philosophy
+                                    <p className='flex item-center justify-center gap-2 text-sm font-semibold uppercase tracking-[0.16em] text-meadow-700'>
+                                    <FiCheckCircle className='flex size-5 shrink-0 items-center justify-center rounded-2xl bg-meadow-100 text-meadow-800' />   Our Philosophy
                                     </p>
 
                                     <p className='mt-3 text-lg leading-8 text-slate-700'>

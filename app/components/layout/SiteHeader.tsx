@@ -32,7 +32,7 @@ export function SiteHeader() {
           <img
             src={logo}
             alt='Meadowbrook Rehabilitation'
-            className='w-[180px] sm:w-[220px]'
+            className='w-auto py-4 md:w-[300px] xl:w-[250px]'
           />
         </NavLink>
 
