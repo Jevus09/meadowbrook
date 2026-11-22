@@ -32,9 +32,9 @@ import {
           className='absolute inset-0 h-full w-full object-cover'
         />
   
-        <div className='absolute inset-0 bg-linear-to-r from-meadow-950/95 via-meadow-950/70 to-transparent' />
+        <div className='absolute inset-0 bg-linear-to-r from-meadow-950/35 via-meadow-950/40 to-transparent' />
   
-        <Container className='relative flex min-h-600px items-center py-20'>
+        <Container className='relative flex min-h-600px justify-center items-center py-20'>
           <div className='max-w-2xl text-white'>
             {eyebrow && (
               <p className='text-sm font-semibold uppercase tracking-[0.22em] text-gold-400'>
@@ -50,7 +50,7 @@ import {
               {description}
             </p>
   
-            <div className='mt-8 flex flex-wrap gap-4'>
+            <div className='mt-8 flex flex-wrap justify-center gap-4'>
               <Button
                 to='/contact'
                 className='gap-2'

@@ -18,10 +18,10 @@ import {
     return (
       <section className='bg-stone-50 py-20 lg:py-28'>
         <Container>
-          <div className='relative overflow-hidden rounded-2rem bg-meadow-900 px-8 py-14 text-white md:px-14 lg:px-20 lg:py-20'>
+          <div className='relative overflow-hidden rounded-2rem bg-meadow-900 px-8 py-14 text-white md:px-14 lg:px-20 lg:py-20 rounded-3xl'>
             <div className='absolute -right-24 -top-24 size-72 rounded-full border border-white/10' />
   
-            <div className='relative max-w-3xl'>
+            <div className='relative  flex flex-col justify-center items-center'>
               <p className='text-sm font-semibold uppercase tracking-[0.2em] text-gold-400'>
                 Visit Meadowbrook
               </p>
@@ -36,10 +36,11 @@ import {
                 available at {locationName}.
               </p>
   
-              <div className='mt-8 flex flex-wrap gap-4'>
+              <div className='mt-8 flex flex-wrap justify-center gap-4'>
                 <Button
                   to='/contact'
                   className='gap-2'
+                  variant='secondary'
                 >
                   <FiCalendar />
                   Schedule a Tour

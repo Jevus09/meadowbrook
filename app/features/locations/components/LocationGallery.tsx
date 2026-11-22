@@ -17,7 +17,7 @@ export function LocationGallery({
   return (
     <section className='bg-meadow-950 py-20 text-white lg:py-28'>
       <Container>
-        <div className='max-w-2xl'>
+        <div className=' flex flex-col justify-center items-center'>
           <p className='text-sm font-semibold uppercase tracking-[0.2em] text-gold-400'>
             Inside Meadowbrook
           </p>

@@ -1,7 +1,13 @@
 import type { LocationData } from '../types'
 //import napervilleVid from '../../../src/videos/MB_Naperville-1080.mp4'
 
-import napervilleimg from '@/src/images/contactPage/Naperville_front.png'
+
+import napervilleimg from '@/src/images/locations/naperville/image-20.jpeg'
+import bedroom from '@/src/images/locations/naperville/bedroom.jpg'
+import community from '@/src/images/locations/naperville/community.jpg'
+import icecream from '@/src/images/locations/naperville/icecream.jpg'
+import hero from '@/src/images/locations/naperville/banner.png'
+
 
 
 
@@ -12,7 +18,7 @@ export const naperville: LocationData = {
   eyebrow: 'Meadowbrook Naperville',
   title: 'Exceptional Care. Close to Home.',
   description: 'Personalized post-hospital rehabilitation and extended care in the heart of Naperville.',
-  heroImage: '/images/locations/naperville/hero.jpg',
+  heroImage: hero,
   heroImageAlt: 'Meadowbrook Naperville',
   contact: {
     address: '720 Raymond Dr.',
@@ -50,13 +56,13 @@ export const naperville: LocationData = {
   },
 
   gallery: [
-    { src: '/images/locations/naperville/rehab-gym.jpg',
+    { src: bedroom,
       alt: 'Rehabilitation gym at Meadowbrook Naperville',
     },
-    { src: '/images/locations/naperville/room.jpg',
+    { src: community,
       alt: 'Patient room at Meadowbrook Naperville',
     },
-    { src: '/images/locations/naperville/dining.jpg',
+    { src: icecream,
       alt: 'Dining area at Meadowbrook Naperville',
     },
   ],

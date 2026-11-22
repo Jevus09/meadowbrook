@@ -1,6 +1,6 @@
 import { Container } from './Container'
 import img from '../../src/images/BANNER.jpg'
-import { SectionHeading } from './SectionHeading'
+
 
 export function PageHero({
   eyebrow,

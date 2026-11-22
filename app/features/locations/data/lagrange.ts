@@ -1,5 +1,12 @@
 import type { LocationData } from '../types'
 import laGrangeImg from '@/src/images/contactPage/Lagrange_front.png'
+import hero from '@/src/images/locations/naperville/banner.png'
+import bedroom from '@/src/images/locations/laGrange/room.jpg'
+import community from '@/src/images/locations/laGrange/community.jpg'
+import livingSpace from '@/src/images/locations/laGrange/livingSpace.jpg'
+import staff from '@/src/images/locations/laGrange/staff.jpeg'
+
+
 
 export const lagrange: LocationData = {
   slug: 'lagrange',
@@ -8,7 +15,7 @@ export const lagrange: LocationData = {
   eyebrow: 'Meadowbrook LaGrange',
   title: 'Premier Post-Hospital Rehabilitation.',
   description: 'Short-term rehabilitation, therapy, and personalized care in a comfortable, thoughtfully designed environment.',
-  heroImage: '/images/locations/lagrange/hero.jpg',
+  heroImage: hero,
   heroImageAlt: 'Meadowbrook LaGrange',
   contact: {
     address: '339 S. 9th Ave.',
@@ -44,13 +51,16 @@ export const lagrange: LocationData = {
   },
 
   gallery: [
-    { src: '/images/locations/lagrange/rehab-gym.jpg',
+    { src: bedroom,
       alt: 'Rehabilitation gym at Meadowbrook LaGrange',
     },
-    { src: '/images/locations/lagrange/room.jpg',
+    { src: community,
       alt: 'Patient room at Meadowbrook LaGrange',
     },
-    { src: '/images/locations/lagrange/community.jpg',
+    // { src: livingSpace,
+    //   alt: 'Community space at Meadowbrook LaGrange',
+    // },
+    { src: staff,
       alt: 'Community space at Meadowbrook LaGrange',
     },
   ],
@@ -59,6 +69,6 @@ export const lagrange: LocationData = {
     title: 'Tour Meadowbrook LaGrange',
     description: 'Take a look inside our rehabilitation and recovery environment.',
     src: '/videos/lagrange-tour.mp4',
-    poster: '/images/locations/lagrange/video-poster.jpg',
+    poster: laGrangeImg,
   },
 }

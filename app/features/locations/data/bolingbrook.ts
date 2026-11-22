@@ -1,5 +1,10 @@
 import type { LocationData } from '../types'
-import bollingbrookImg from '@/src/images/contactPage/Bolingbrook_front.png'
+
+import bollingbrookImg from '@/src/images/locations/bollingbrook/front.jpg'
+import staff from '@/src/images/locations/bollingbrook/staff.jpeg'
+import community from '@/src/images/locations/bollingbrook/community.jpg'
+import hero from '@/src/images/locations/naperville/banner.png'
+
 
 export const bolingbrook: LocationData = {
   slug: 'bolingbrook',
@@ -8,7 +13,7 @@ export const bolingbrook: LocationData = {
   eyebrow: 'Meadowbrook Bolingbrook',
   title: 'Personalized Care. Exceptional Recovery.',
   description: 'Post-hospital rehabilitation and extended care centered around the needs of each patient and resident.',
-  heroImage: '/images/locations/bolingbrook/hero.jpg',
+  heroImage: hero,
   heroImageAlt: 'Meadowbrook Bolingbrook',
   contact: {
     address: '431 W. Remington Blvd.',
@@ -47,13 +52,13 @@ export const bolingbrook: LocationData = {
   },
 
   gallery: [
-    { src: '/images/locations/bolingbrook/rehab-gym.jpg',
+    { src: bollingbrookImg,
       alt: 'Rehabilitation gym at Meadowbrook Bolingbrook',
     },
-    { src: '/images/locations/bolingbrook/room.jpg',
+    { src: staff,
       alt: 'Patient room at Meadowbrook Bolingbrook',
     },
-    { src: '/images/locations/bolingbrook/community.jpg',
+    { src: community,
       alt: 'Community space at Meadowbrook Bolingbrook',
     },
   ],
