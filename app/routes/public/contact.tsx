@@ -53,7 +53,7 @@ export default function ContactPage() {
         title='Contact & Schedule a Tour'
         description="Ask a general question or plan a personal visit to the Meadowbrook location that's most convenient for you."
       />
-      <div>
+      <div id='location-map'>
         <iframe
           className='w-full h-[70vh] md:pt-1'
           loading='lazy'
@@ -82,7 +82,18 @@ export default function ContactPage() {
               style={{
                 backgroundImage: `linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.65)), url("${card.background}")`,
               }}
-              onClick={() => setActiveLocation(card.api)}
+              onClick={() => {
+                setActiveLocation(card.api)
+              
+                setTimeout(() => {
+                  document
+                    .getElementById('location-map')
+                    ?.scrollIntoView({
+                      behavior: 'smooth',
+                      block: 'start',
+                    })
+                }, 0)
+              }}
             >
               <h3 className='text-xl sm:text-2xl lg:text-2xl font-semibold tracking-wide mb-4'>
                 {card.name}
@@ -102,26 +113,26 @@ export default function ContactPage() {
         <Container>
           <div className='soft-card mx-auto max-w-4xl rounded-2xl bg-white p-6 sm:p-8'>
             <div className='grid gap-5 sm:grid-cols-2'>
-              <label className='text-sm font-semibold'>
+              <label className='text-sm flex flex-col items-start font-semibold'>
                 First Name
                 <input className='mt-2 w-full rounded-xl border border-black/10 p-3 font-normal' />
               </label>
-              <label className='text-sm font-semibold'>
+              <label className='flex flex-col items-start text-sm font-semibold'>
                 Last Name
                 <input className='mt-2 w-full rounded-xl border border-black/10 p-3 font-normal' />
               </label>
-              <label className='text-sm font-semibold'>
+              <label className='flex flex-col items-start text-sm font-semibold'>
                 Email
                 <input
                   type='email'
                   className='mt-2 w-full rounded-xl border border-black/10 p-3 font-normal'
                 />
               </label>
-              <label className='text-sm font-semibold'>
+              <label className='flex flex-col items-start text-sm font-semibold'>
                 Phone
                 <input className='mt-2 w-full rounded-xl border border-black/10 p-3 font-normal' />
               </label>
-              <label className='text-sm font-semibold sm:col-span-2'>
+              <label className='flex flex-col items-start text-sm font-semibold sm:col-span-2'>
                 Preferred Location
                 <select className='mt-2 w-full rounded-xl border border-black/10 p-3 font-normal'>
                   <option>Select a location</option>
@@ -130,7 +141,7 @@ export default function ContactPage() {
                   ))}
                 </select>
               </label>
-              <label className='text-sm font-semibold sm:col-span-2'>
+              <label className='flex flex-col items-start text-sm font-semibold sm:col-span-2'>
                 General Message
                 <textarea
                   className='mt-2 min-h-32 w-full rounded-xl border border-black/10 p-3 font-normal'

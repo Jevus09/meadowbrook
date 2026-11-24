@@ -174,7 +174,7 @@ export function SiteFooter() {
               {locations.map((location) => (
                 <div
                   key={location.name}
-                  className='border-b border-white/10 pb-5 '
+                  className='border-b border-white/10 pb-5 flex flex-col '
                 >
                   <Link
                     to={location.to}

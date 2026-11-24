@@ -21,7 +21,7 @@ import {
       <section className='border-b border-black/5 bg-white'>
         <Container>
           <div className='grid divide-y divide-black/5 md:grid-cols-3 md:divide-x md:divide-y-0'>
-            <div className='flex items-start gap-4 py-7 md:px-6 md:first:pl-0'>
+            <div className='flex justify-center items-center gap-4 py-7 md:px-6 md:first:pl-0'>
               <div className='grid size-11 shrink-0 place-items-center rounded-xl bg-meadow-50 text-meadow-800'>
                 <FiMapPin />
               </div>
@@ -43,7 +43,7 @@ import {
               </div>
             </div>
   
-            <div className='flex items-start gap-4 py-7 md:px-6'>
+            <div className='flex justify-center items-center gap-4 py-7 md:px-6'>
               <div className='grid size-11 shrink-0 place-items-center rounded-xl bg-meadow-50 text-meadow-800'>
                 <FiPhone />
               </div>
@@ -63,7 +63,7 @@ import {
             </div>
   
             {contact.fax && (
-              <div className='flex items-start gap-4 py-7 md:px-6'>
+              <div className='flex justify-center items-center gap-4 py-7 md:px-6'>
                 <div className='grid size-11 shrink-0 place-items-center rounded-xl bg-meadow-50 text-meadow-800'>
                   <FiPrinter />
                 </div>
