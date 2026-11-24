@@ -9,7 +9,7 @@ export interface SuccessStory {
   image: string;
   readTime: string;
 }
-import hero from '../../src/images/stories/hero.png'
+import hero from '../../src/images/stories/hero.webp'
 import memoryCare from '../../src/images/stories/memoryCare.png'
 import cardio from '../../src/images/stories/cardio.png'
 import respiteCare from '../../src/images/stories/respiteCare.png'

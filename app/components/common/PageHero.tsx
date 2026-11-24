@@ -1,5 +1,5 @@
 import { Container } from './Container'
-import img from '../../src/images/BANNER.jpg'
+import img from '../../src/images/BANNER.webp'
 
 
 export function PageHero({
